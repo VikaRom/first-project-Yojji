@@ -161,11 +161,45 @@ ul{
     justify-content: space-between;
 }
 .leftPartDromMenu{
-    width: 35%;
+    width: 34%;
     margin-left: 20px;
-    background-color: grey;
+    /* background-color: grey; */
     display: flex;
     justify-content:space-around;
-    
+}
+.RightPartDromMenu{
+    width: 65%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-end;
+}
 
+.choiseButton{
+    width: 85px;
+    height: 36px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: #EBF2FF;
+    color:#5A5B6A;
+}
+.sec{
+    margin-left: 20px;
+}
+.choiseButton2{
+    width: 68px;
+    height: 36px;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: #EBF2FF;
+    color:#5A5B6A;
+}
+.choiseButton:hover{
+    background-color: #fff;
+    color: #2979FF;
+}
+.choiseButton2:hover{
+    background-color: #fff;
+}
+.choiseButton2:hover svg{
+    fill: #2979FF;
 }
