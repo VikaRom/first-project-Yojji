@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -98,9 +101,10 @@
                     <img src="img/filter.svg" alt="">
                     <p>Departments</p>
                 </div>
-
                 <div class="blockSelect">
-                    <div class="AllCategoris">
+
+
+                    <div class="AllCategoris1">
                         <img src="img/arrow.svg" alt="">
                         <div>
                             <p class="nameSelect">All Categories</p>
@@ -108,48 +112,194 @@
                         </div>
 
                     </div>
-
-                    <div class="Electronics">
-                        <div class="Electronics">
+                    <ul class="mainUl">
+                        <li class="AllCategoris">
                             <img src="img/openArrow.svg" alt="">
                             <div>
-                                <p class="nameSelect">Electronics</p>
+                                <p class="nameSelectB">Electronics</p>
                             </div>
-    
-                        </div>
-                    </div>
-                    <div class="Electronics">
-                        <div class="CellPhones">
-                            <img src="img/openArrow.svg" alt="">
-                            <div>
-                                <p class="nameSelect">Cell Phones & Smartphones</p>
-                            </div>
-    
+                           
+                        </li>
+                        <ul class="AllCategorisUl">
+                            <li class="AllCategoris">
+                                <img src="img/openArrow.svg" alt="">
+                                <div>
+                                    <p class="nameSelectB">Cell Phones & Smartphones</p>
+                                </div>
+                               
+                            </li>
+                            <ul class="listInFilter">
+                                <li class="li">Cell Phone Accessories</li>
+                                <li>Cell Phone Gatgets</li>
+                                <li>Applications</li>
+                                <li>Smart Watches</li>
+                                <li>
+                                    <button>
+                                        <p>Show more</p>
+                                        <img src="img/arrowGrey.svg" alt="">
+                                    </button>
+                                </li>
+                            </ul>
+                            <li class="AllCategoris">
+                                <img src="img/arrow.svg" alt="">
+                                <div>
+                                    <p class="nameSelectB">Business & Industrial</p>
+                                </div>
+                            </li>
+                            <li class="AllCategoris1">
+                                <img src="img/arrow.svg" alt="">
+                                <div>
+                                    <p class="nameSelect">Computers</p>
+                                    <p class="underName">Tablets & Networking</p>
+                                </div>
+                            </li>
+                            <li class="AllCategoris">
+                                <img src="img/arrow.svg" alt="">
+                                <div>
+                                    <p class="nameSelect">Consumer Electroinics</p>
+                                </div>
+                            </li>
+                            <li class="AllCategoris">
+                                <img src="img/arrow.svg" alt="">
+                                <div>
+                                    <p class="nameSelect">Home & Garden</p>
+                                </div>
+                            </li>
+                            <li class="AllCategoris">
+                                <img src="img/arrow.svg" alt="">
+                                <div>
+                                    <p class="nameSelect">Collectibles</p>
+                                </div>
+                            </li>
+                            <li class="liButton">
+                                <button class="expendButton">
+                                    <p>Expand</p>
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </ul>
+                    <!-- 
+                    <div class="AllCategoris">
+                        <img src="img/openArrow.svg" alt="">
+                        <div>
+                            <p class="nameSelect">Electronics</p>
                         </div>
                     </div>
 
+                    <div class="AllCategoris">
+                        <img src="img/openArrow.svg" alt="">
+                        <div>
+                            <p class="nameSelect">Cell Phones & Smartphones</p>
+                        </div>
+                    </div> -->
+
+                    <!-- 
                     <div class="listInFilter">
-                        <p>Cell Phone Accessories</p>
-                        <p>Cell Phone Gatgets</p>
-                        <p>Applications</p>
-                        <p>Smart Watches</p>
+                        <ul class="listInFilter">
+                            <li class="li">Cell Phone Accessories</li>
+                            <li>Cell Phone Gatgets</li>
+                            <li>Applications</li>
+                            <li>Smart Watches</li>
+                        </ul>
                         <button>
                             <p>Show more</p>
                             <img src="img/arrowGrey.svg" alt="">
                         </button>
-                    </div>
+                    </div> -->
 
 
                 </div>
 
-                <!-- 
-                <select class="Electronics">
-                    <option>Electronics</option>
 
-                    <option>Dave</option>
-                    <option>Pumpernickel</option>
-                    <option>Reeses</option>
-                </select> -->
+                <div class="blockCheckboxes">
+                    <div class="closeBlock">
+                        <p>Collapsed filters</p>
+                        <img src="img/openArrow.svg" alt="">
+                    </div>
+                    <div class="openBlock">
+                        <div class="blockName">
+                            <p>Expanded Filters</p>
+                            <img src="img/arrowUp.svg" alt="">
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">Recommended</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">Recently Added</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">Expiring Soon</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">Most Rated</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">Price: Low → High</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">Price: High → Low</label>
+                        </div>
+
+
+                    </div>
+                    <div class="openBlock">
+                        <div class="blockName">
+                            <p>Expanded Filters</p>
+                            <img src="img/arrowUp.svg" alt="">
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1954</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1955</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1956</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1957</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1958</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1959</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1960</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1961</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <label class="labelCheckbox">1962-2020</label>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
 
 
 
@@ -254,11 +404,11 @@
                             <img src="img/card2.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Lee Pucker design. Leather botinki for handsome designers. Free shipping.</p>
                         </div>
-                        <p class="price">$49.50</p>
+                        <p class="price">$13.95</p>
                         <div class="textCard2">
-                            <p>Eligible for Shipping To Mars or somewhere else</p>
+                            <p>1258 bids, 359 watchers $5.95 for shipping</p>
                         </div>
                         <div class="bottomPartCard">
                             <div class="starBlock">
@@ -267,7 +417,7 @@
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
-                                <p>4.05</p>
+                                <p>4.56</p>
                             </div>
                             <button class="watch">
                                 <img src="img/heard.svg" alt="">
@@ -280,11 +430,11 @@
                             <img src="img/card3.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Timesaving kitten to save months on development. Playful, cute, cheap!                            </p>
                         </div>
-                        <p class="price">$49.50</p>
+                        <p class="price">$128.99</p>
                         <div class="textCard2">
-                            <p>Eligible for Shipping To Mars or somewhere else</p>
+                            <p>Eligible for nothing :(</p>
                         </div>
                         <div class="bottomPartCard">
                             <div class="starBlock">
@@ -293,7 +443,7 @@
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
-                                <p>4.05</p>
+                                <p>4.87</p>
                             </div>
                             <button class="watch">
                                 <img src="img/heard.svg" alt="">
@@ -306,11 +456,17 @@
                             <img src="img/card4.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!</p>
                         </div>
-                        <p class="price">$49.50</p>
+                        <div class="blockPrice">
+                            <p class="price">$12.48</p>
+                            <div class="blockNearPrice">
+                                <p>50% OFF</p>
+                            </div>
+                        </div>
+                       
                         <div class="textCard2">
-                            <p>Eligible for Shipping To Mars or somewhere else</p>
+                            <p>Wordwide shitting available Buyers protection possible!</p>
                         </div>
                         <div class="bottomPartCard">
                             <div class="starBlock">
@@ -319,7 +475,7 @@
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
-                                <p>4.05</p>
+                                <p>4.99</p>
                             </div>
                             <button class="watch">
                                 <img src="img/heard.svg" alt="">
@@ -332,11 +488,11 @@
                             <img src="img/card5.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Creativity stimulating lotion. Drink every morning to generate better ideas!</p>
                         </div>
-                        <p class="price">$49.50</p>
+                        <p class="price">$12.48</p>
                         <div class="textCard2">
-                            <p>Eligible for Shipping To Mars or somewhere else</p>
+                            <p>Wordwide shifting available Buyers protection possible!</p>
                         </div>
                         <div class="bottomPartCard">
                             <div class="starBlock">
@@ -345,7 +501,7 @@
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
-                                <p>4.05</p>
+                                <p>4.99</p>
                             </div>
                             <button class="watch">
                                 <img src="img/heard.svg" alt="">
@@ -358,7 +514,7 @@
                             <img src="img/card6.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Prototyping items to create a lot if useless things...</p>
                         </div>
                         <p class="price">$49.50</p>
                         <div class="textCard2">
@@ -384,11 +540,11 @@
                             <img src="img/card7.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>John Von Ebalkin SPRING</p>
                         </div>
                         <p class="price">$49.50</p>
                         <div class="textCard2">
-                            <p>Eligible for Shipping To Mars or somewhere else</p>
+                            <p>1258 bids, 359 watchers $5.95 for shipping</p>
                         </div>
                         <div class="bottomPartCard">
                             <div class="starBlock">
@@ -397,7 +553,7 @@
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
                                 <img src="img/star.svg" alt="">
-                                <p>4.05</p>
+                                <p>13.95</p>
                             </div>
                             <button class="watch">
                                 <img src="img/heard.svg" alt="">
@@ -410,9 +566,9 @@
                             <img src="img/card8.png" alt="">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
                         </div>
-                        <p class="price">$49.50</p>
+                        <p class="price">$9.50</p>
                         <div class="textCard2">
                             <p>Eligible for Shipping To Mars or somewhere else</p>
                         </div>

@@ -164,12 +164,11 @@ ul{
 .dropMenu1{
     width: 136px;
     height: 36px;
-    border-radius: 3px;
-    border-color: #5A5B6A;
-    /* margin: 0 5px; */
+    border-radius: 4px;
     margin-right: 5px;
     font-size: 14px;
     padding: 5px;
+    border: 1px solid #5A5B6A;
 }
 .dropMenu2{
     min-width: 112px;
@@ -429,6 +428,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     border-right: 1px solid #D1D1E1;
+    
 }
 .secondBlockF button{
     width: 120px;
@@ -552,6 +552,7 @@ margin-left: 10px;
     box-sizing: border-box;
     align-items: center;
     border-radius: 8px;
+    margin-bottom: 50px;
 }
 .filter p{
     color:#2264D1;
@@ -568,59 +569,163 @@ margin-left: 10px;
 
 .AllCategoris{
     display: flex;
-    margin-top: 50px;
-    padding: 0 10px;
+    /* margin-top: 50px; */
+    align-items: center;
+    height: 40px;
 }
-/* .AllCategoris img{
+.AllCategoris1{
+    display: flex;
+    /* margin-top: 50px; */
+    align-items: center;
+    height: 56px;
+}
+.AllCategoris img{
+    margin-right: 15px;
+}
+.AllCategoris1 img{
     margin-right: 15px;
 }
 .nameSelect{
     font-size: 16px;
     font-family: Inter;
     color: #19191D;
+    font-weight: 400;
+    display: flex;
+    
 }
 .underName{
     font-size: 14px;
     font-family: Inter;
     color: #787885;
 }
-
-.Electronics{
-    display: flex;
-    margin-top: 15px;
-    margin-left: 3px;
-    
-
-}
-.Electronics img{
-    margin-right: 15px;
-}
-.CellPhones{
-    display: flex;
-    margin-top: 15px;
-    margin-left: 6px;
-    margin-bottom: 15px;
-}
-
 .listInFilter{
-    margin-top: 10px;
-    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.listInFilter p{
-    color:#19191D;
+.listInFilter li{
+    height: 40px;
+    padding-left: 25px;
     font-family: Inter;
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    margin-top: 10px;
+    font-weight: 400;
+    color:#19191D;
 }
 .listInFilter button{
-    background-color: #EBF2FF;
     width: 138px;
     height: 40px;
-    color:#2264D1;
     border-color: transparent;
-    border-radius: 4px;
-    margin-top: 10px;
+    background-color: #EBF2FF;
+    color:#2264D1;
     display: flex;
     align-items: center;
     justify-content: space-around;
-} */
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+.closeBlock{
+    width: 304px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
+    border-radius: 4px;
+    color:#19191D;
+    font-family: Inter;
+    margin-bottom: 24px;
+}
+.openBlock{
+    background-color:  #F7F7FA;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+}
+.blockName{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#19191D;
+    font-family: Inter;
+    font-weight: 500;
+}
+.checkbox{
+   padding: 10px 0 10px 40px;
+}
+.labelCheckbox{
+    color:#19191D;
+    font-size: 16px;
+    font-family: Inter;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.checkbox input{
+    border-color: black;
+    width: 18px;
+    height: 18px;
+    background-color: #DADADA;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.mainUl{
+    display: flex;
+    flex-direction: column;
+}
+.AllCategorisUl{
+   display: flex;
+   flex-direction: column;
+}
+.nameSelectB{
+    font-size: 16px;
+    font-family: Inter;
+    color: #19191D;
+    font-weight: 500;
+    display: flex; 
+}
+.expendButton{
+    width: 75px;
+    height: 40px;
+    background-color: #EBF2FF;
+    border-color: transparent;
+    color:#2264D1;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+   
+}
+.liButton{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-bottom: 38px;
+}
+.blockPrice{
+    display: flex;
+    justify-content: space-between;
+}
+.blockNearPrice{
+    width: 70px;
+    height: 24px;
+    background-color: #ECF7ED;
+    border-radius: 4px;
+    border-color: transparent;
+    color: #37833B;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 400;
+}
