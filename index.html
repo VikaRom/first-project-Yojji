@@ -21,7 +21,9 @@
 <body>
     <header class="header">
         <a href="#">
-            <img src="img/avatar.png" alt="" class="headerAvatar">
+            <span class="headerAvatar">
+                <img src="img/avatar.png" alt="">
+            </span>
         </a>
         <a href="#">
             <p class="headerText1">Sell on Shopka</p>
@@ -37,20 +39,22 @@
             <img src="img/search.svg" alt="" class="headerLogo2">
 
         </div>
-            <a href="#" class="headerText3">Consumer Electronics</a>
+        <a href="#" class="headerText3">Consumer Electronics</a>
         <div class="containerForButHeader">
-            <button>Sing in</button>
+            <button class="button-header">Sing in</button>
             <div class="notofocation">
                 <div class="redCircle">
                     <p>5</p>
                 </div>
-                <button class="headerButtonActive">My cart</button>
+                <button class="headerButtonActive button-header ">My cart</button>
             </div>
         </div>
         <a href="#">
             <img src="img/Edward.png" alt="">
         </a>
     </header>
+
+
 
     <div class="wrapper">
 
@@ -212,26 +216,37 @@
         <div class="mainContainer">
             <div class="leftPart">
                 <div class="filter">
-                    <img src="img/filter.svg" alt="">
+                    <span>
+                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 7H15V5H3V7ZM0 0V2H18V0H0ZM7 12H11V10H7V12Z" fill="#2264D1" />
+                        </svg>
+
+                    </span>
+                    <!-- <img src="img/filter.svg" alt=""> -->
                     <p>Departments</p>
                 </div>
                 <div class="blockSelect">
+                    <ul>
+                        <li class="filterContainer">
+                            <a href="#" class="containerElementFilter1">
+                                <span class="arrow">
+                                    <img src="img/arrow.svg" alt="">
+                                </span>
+                                <span class="twoNames">
+                                    <span class="name">All Categories</span>
+                                    <span>Ecommerce patterns</span>
+    
+                                </span>
+    
+                            </a>
+                        </li>
+                        <li>
 
-                    <li class="filterContainer">
-                        <a href="#" class="containerElementFilter1">
-                            <span class="arrow">
-                                <img src="img/arrow.svg" alt="">
-                            </span>
-                            <div class="twoNames">
-                                <span class="name">All Categories</span>
-                                <span>Ecommerce patterns</span>
-
-                            </div>
-                            
-                        </a>
-                    </li>
+                      
+                    </ul>
+                   
                     <ul class="categorisFilter">
-                        
+
                         <li class="filterContainer">
                             <a href="#" class="containerElementFilter1 ">
                                 <span class="arrow">
@@ -271,10 +286,11 @@
                                         </li>
                                         <li class="marginInFilter innerList containerElementFilter">
                                             <a href="#">
-                                                <button class="showMore">
-                                                    <p>Show more</p>
+
+                                                <span class="showMore">
+                                                    <p class="show-more-text">Show more</p>
                                                     <img src="img/arrowGrey.svg" alt="">
-                                                </button>
+                                                </span>
                                             </a>
                                         </li>
 
@@ -295,11 +311,11 @@
                                         <span class="arrow">
                                             <img src="img/arrow.svg" alt="">
                                         </span>
-                                        <div class="twoNames">
+                                        <span class="twoNames">
                                             <span class="name">Computers</span>
                                             <span>Tablets & Networking</span>
-                                        </div>
-                                        
+                                        </span>
+
                                     </a>
                                 </li>
                                 <li class="filterContainer">
@@ -325,18 +341,13 @@
                                 </li>
                                 <li class="filterContainer">
                                     <a href="#" class="containerElementFilter1">
-                                        <button class="expendButton">Expand</button> </span>
+                                        <span class="expendButton">Expand</span>
                                     </a>
                                 </li>
-
-
-
-
                             </ul>
-
                         </li>
                     </ul>
-
+                </li>
 
                 </div>
 
@@ -353,28 +364,28 @@
                         </div>
 
                         <div class="checkbox">
-                            <input id="10" type="checkbox">
-                            <label for="10" class="labelCheckbox">Recommended</label>
+                            <input id="Recommended" type="checkbox" class="checkbox-square">
+                            <label for="Recommended" class="labelCheckbox">Recommended</label>
                         </div>
                         <div class="checkbox">
-                            <input id="11" type="checkbox">
-                            <label for="11" class="labelCheckbox">Recently Added</label>
+                            <input id="Recently" type="checkbox" class="checkbox-square">
+                            <label for="Recently" class="labelCheckbox">Recently Added</label>
                         </div>
                         <div class="checkbox">
-                            <input id="12" type="checkbox">
-                            <label for="12" class="labelCheckbox">Expiring Soon</label>
+                            <input id="Expiring" type="checkbox" class="checkbox-square">
+                            <label for="Expiring" class="labelCheckbox">Expiring Soon</label>
                         </div>
                         <div class="checkbox">
-                            <input id="13" type="checkbox">
-                            <label for="13" class="labelCheckbox">Most Rated</label>
+                            <input id="Most" type="checkbox" class="checkbox-square">
+                            <label for="Most" class="labelCheckbox">Most Rated</label>
                         </div>
                         <div class="checkbox">
-                            <input id="14" type="checkbox">
-                            <label for="14" class="labelCheckbox">Price: Low → High</label>
+                            <input id="PriceLow" type="checkbox" class="checkbox-square">
+                            <label for="PriceLow" class="labelCheckbox">Price: Low → High</label>
                         </div>
                         <div class="checkbox">
-                            <input id="15" type="checkbox">
-                            <label for="15"  class="labelCheckbox">Price: High → Low</label>
+                            <input id="PriceHigh" type="checkbox" class="checkbox-square">
+                            <label for="PriceHigh" class="labelCheckbox">Price: High → Low</label>
                         </div>
 
 
@@ -386,40 +397,40 @@
                         </div>
 
                         <div class="checkbox">
-                            <input id='1' type="checkbox">
-                            <label for='1' class="labelCheckbox">1954</label>
+                            <input id='year_1954' type="checkbox" class="checkbox-square">
+                            <label for='year_1954' class="labelCheckbox">1954</label>
                         </div>
                         <div class="checkbox">
-                            <input id='2' type="checkbox">
-                            <label for='2' class="labelCheckbox">1955</label>
+                            <input id='year_1955' type="checkbox" class="checkbox-square">
+                            <label for='year_1955' class="labelCheckbox">1955</label>
                         </div>
                         <div class="checkbox">
-                            <input id='3' type="checkbox">
-                            <label for='3' class="labelCheckbox">1956</label>
+                            <input id='year_1956' type="checkbox" class="checkbox-square">
+                            <label for='year_1956' class="labelCheckbox">1956</label>
                         </div>
                         <div class="checkbox">
-                            <input id='4'type="checkbox">
-                            <label for='4'class="labelCheckbox">1957</label>
+                            <input id='year_1957' type="checkbox" class="checkbox-square">
+                            <label for='year_1957' class="labelCheckbox">1957</label>
                         </div>
                         <div class="checkbox">
-                            <input id='5' type="checkbox">
-                            <label for='5' class="labelCheckbox">1958</label>
+                            <input id='year_1958' type="checkbox" class="checkbox-square">
+                            <label for='year_1958' class="labelCheckbox">1958</label>
                         </div>
                         <div class="checkbox">
-                            <input id='6' type="checkbox">
-                            <label for='6'class="labelCheckbox">1959</label>
+                            <input id='year_1959' type="checkbox" class="checkbox-square">
+                            <label for='year_1959' class="labelCheckbox">1959</label>
                         </div>
                         <div class="checkbox">
-                            <input id='7' type="checkbox">
-                            <label for='7' class="labelCheckbox">1960</label>
+                            <input id='year_1960' type="checkbox" class="checkbox-square">
+                            <label for='year_1960' class="labelCheckbox">1960</label>
                         </div>
                         <div class="checkbox">
-                            <input id='8' type="checkbox">
-                            <label for='8' class="labelCheckbox">1961</label>
+                            <input id='year_1961' type="checkbox" class="checkbox-square">
+                            <label for='year_1961' class="labelCheckbox">1961</label>
                         </div>
                         <div class="checkbox">
-                            <input id='9' type="checkbox">
-                            <label for='9' class="labelCheckbox">1962-2020</label>
+                            <input id='year_1962' type="checkbox" class="checkbox-square">
+                            <label for='year_1962' class="labelCheckbox">1962-2020</label>
                         </div>
 
 
@@ -428,14 +439,6 @@
 
 
                 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -453,11 +456,11 @@
                             </select>
                         </div>
 
-                        <select class="dropMenu1 dropMenu2">
+                        <select class="dropMenu2">
                             <option value="UselessFirst">Condition</option>
 
                         </select>
-                        <select class="dropMenu1 dropMenu3">
+                        <select class="dropMenu3">
                             <option value="UselessFirst">Delivery option</option>
                         </select>
                     </div>
@@ -490,13 +493,15 @@
                 </div>
                 <div class="secondMenu">
                     <div class="buttonList">
-                        <button class="buttonFromList buttonFromListActive">Related</button>
-                        <button class="buttonFromList">worldwide shipping</button>
-                        <button class="buttonFromList">under $50</button>
-                        <button class="buttonFromList">kitten</button>
-                        <button class="buttonFromList">plastic plugs</button>
-                        <button class="buttonFromList">pucker shoes</button>
-                        <button class="buttonFromList">vintage typewriter </button>
+                        <a href="#" class="buttonFromList buttonFromListActive">Related</a>
+                        <!-- <button class="buttonFromList buttonFromListActive">Related</button> -->
+                        <a href="#" class="buttonFromList">worldwide shipping</a>
+                        <a href="#" class="buttonFromList">under $50</a>
+                        <a href="#" class="buttonFromList">kitten</a>
+                        <a href="#" class="buttonFromList">plastic plugs</a>
+                        <a href="#" class="buttonFromList">pucker shoes</a>
+                        <a href="#" class="buttonFromList">vintage typewriter</a>
+
 
                     </div>
                 </div>
@@ -507,7 +512,7 @@
 
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card1.png" alt="">
+                            <img src="img/card1.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
@@ -533,7 +538,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card2.png" alt="">
+                            <img src="img/card2.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Lee Pucker design. Leather botinki for handsome designers. Free shipping.</p>
@@ -559,7 +564,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card3.png" alt="">
+                            <img src="img/card3.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Timesaving kitten to save months on development. Playful, cute, cheap! </p>
@@ -585,7 +590,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card4.png" alt="">
+                            <img src="img/card4.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!</p>
@@ -617,7 +622,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card5.png" alt="">
+                            <img src="img/card5.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Creativity stimulating lotion. Drink every morning to generate better ideas!</p>
@@ -643,7 +648,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card6.png" alt="">
+                            <img src="img/card6.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Prototyping items to create a lot if useless things...</p>
@@ -669,7 +674,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card7.png" alt="">
+                            <img src="img/card7.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>John Von Ebalkin SPRING</p>
@@ -695,7 +700,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card8.png" alt="">
+                            <img src="img/card8.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
@@ -721,10 +726,10 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card9.png" alt="">
+                            <img src="img/card9.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
-                            <p>Vintage Typewriter to post awesome stories about UI design and webdev.</p>
+                            <p>Professional teadrinking set for every designer and developer</p>
                         </div>
                         <p class="price">$49.50</p>
                         <div class="textCard2">
@@ -747,7 +752,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card10.png" alt="">
+                            <img src="img/card10.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>Professional teadrinking set for every designer and developer</p>
@@ -773,12 +778,17 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card11.png" alt="">
+                            <img src="img/card11.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>One string Bonsai description</p>
                         </div>
-                        <p class="price">$1.25</p>
+                        <div class="blockPrice">
+                            <p class="price">$12.48</p>
+                            <div class="red-block">
+                                <p>Cool deal!</p>
+                            </div>
+                        </div>
                         <div class="textCard2">
                             <p>Eligible for Shipping To Mars or somewhere else</p>
                         </div>
@@ -799,7 +809,7 @@
                     </div>
                     <div class="card">
                         <div class="imageCard">
-                            <img src="img/card12.png" alt="">
+                            <img src="img/card12.png" alt="" class="image-in-card">
                         </div>
                         <div class="textCard1">
                             <p>KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!</p>
@@ -890,7 +900,7 @@
 
             </div>
             <div class="secondPartF">
-                <p class="opacityP">BUSINESS</p>
+                <p class="opacityP2">BUSINESS</p>
                 <p class="littleTextF">Cooperation</p>
                 <div class="lastContF">
                     <div class="miniCont1">
@@ -933,21 +943,19 @@
         <div class="lastPartFooter">
             <div class="blockInBottomF">
 
-                <a href="#">Shopka © 2011 All rights reserved</a>
-                <!-- <p>Shopka © 2011 All rights reserved</p> -->
+                <a href="#" class="sub-footer-info">Shopka © 2011 All rights reserved</a>
                 <div class="images">
                     <a href="#">
                         <img src="img/visa.svg" alt="">
                     </a>
-                    <a href="#">
+                    <a href="#" >
                         <img src="img/mastercard.svg" alt="">
                     </a>
                 </div>
                 <div class="blockTextBottom">
-                    <a href="#">Sitemap</a>
-                    <a href="#">Privacy policy</a>
-                    <!-- <p>Sitemap</p>
-                    <p> Privacy policy</p> -->
+                    <a href="#" class="sub-footer-info">Sitemap</a>
+                    <a href="#" class="sub-footer-info">Privacy policy</a>
+                
                 </div>
 
             </div>

@@ -1,18 +1,28 @@
 html * {
     margin: 0;
     padding: 0;
-}
-
-p {
     font-family: Inter;
 }
 
 a {
-    font-family: Inter;
+    text-decoration: none;
+    font-size: 14px;
+   
+
+}
+span{
+    color:#787885;
 }
 
-label {
-    font-family: Inter;
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 label:hover {
@@ -36,20 +46,12 @@ label:hover {
 .headerText1 {
     font-size: 20px;
     color: #5A5B6A;
-    font-family: Inter;
-    margin-left: 1px;
-    text-align: center;
-    width: 220px;
-    margin-right: -4px;
+    padding:0 25px;
 }
 
 .headerText1:hover {
     opacity: 0.6;
 }
-.containerInp img{
-    cursor: pointer;
-}
-
 .headerText2:hover {
     opacity: 0.6;
 }
@@ -58,20 +60,16 @@ label:hover {
     opacity: 0.6;
 }
 
-/* .header button:hover {
-    opacity: 0.6;
-} */
-
 .headerText2 {
     font-size: 20px;
     color: #5A5B6A;
-    font-family: Inter;
-    width: 107px;
-    margin-right: 78px;
+    padding: 0 25px;
+    margin-right: 50px;
 }
 
 .headerAvatar {
-    margin-left: 15px;
+    padding: 0 25px ;
+    cursor: pointer;
 }
 
 .header input {
@@ -87,6 +85,7 @@ label:hover {
 }
 
 .containerInp {
+    margin: 0 30px 0 0;
     position: relative;
 }
 
@@ -110,12 +109,10 @@ input::placeholder {
 }
 
 .headerText3 {
-    width: 210px;
+    padding: 0 25px;
     font-size: 20px;
     color: #2264D1;
-    margin-left: 29px;
-    margin-right: 124px;
-
+    margin-right: 75px;
 }
 
 .button {
@@ -132,8 +129,7 @@ input::placeholder {
     font-size: 20px;
     margin-right: 12px;
 }
-
-.header button {
+.button-header{
     width: 105px;
     height: 40px;
     border: 1px solid #9DC2FF;
@@ -148,9 +144,13 @@ input::placeholder {
 
 .containerForButHeader {
     display: flex;
+    margin: 0 15px 0 0;
 }
 .containerForButHeader button{
     font-weight: 700;
+}
+.containerForButHeader button:hover{
+    opacity: 0.6;
 }
 
 .notofocation {
@@ -212,7 +212,8 @@ input::placeholder {
 }
 
 .infoContainerElement:hover {
-    background-color: #EBF2FF;
+    /* border: 1px solid #EBF2FF; */
+    /* background-color: #EBF2FF; */
     color: #2979FF;
 }
 
@@ -234,25 +235,6 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
-a {
-    display: block;
-    color: grey;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-li {
-    list-style: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 
 
 .mainContainer {
@@ -260,6 +242,7 @@ ul {
     padding-top: 2px;
     height: auto;
     display: flex;
+    margin-bottom: 40px;
 }
 
 .leftPart {
@@ -304,6 +287,13 @@ ul {
     padding: 5px;
     color: #787885;
     cursor: pointer;
+
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200L5%205L10%200L0%200Z%22%20fill%3D%22%23787885%22%2F%3E%3C%2Fsvg%3E ');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    padding-left: 15px;
 }
 
 .dropMenu3 {
@@ -312,9 +302,15 @@ ul {
     border-radius: 3px;
     border-color: #B4B4BB;
     font-size: 14px;
-    padding: 5px;
     color: #787885;
     cursor: pointer;
+
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200L5%205L10%200L0%200Z%22%20fill%3D%22%23787885%22%2F%3E%3C%2Fsvg%3E ');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    padding-left: 15px;
 }
 
 .headetInMain {
@@ -390,16 +386,16 @@ ul {
 
 .buttonList {
     display: flex;
+    margin-bottom: 50px;
 
 }
 
 .buttonFromList {
-    height: 32px;
+    padding:10px  15px ;
     border-radius: 99px;
     border-color: transparent;
     background-color: #EDEDF0;
     color: #4A4B57;
-    padding: 0 15px;
     margin-right: 10px;
 }
 
@@ -418,6 +414,20 @@ ul {
     flex-wrap: wrap;
 }
 
+.red-block{
+    width: 70px;
+    height: 24px;
+    background-color: #FDEDF2;
+    border-radius: 4px;
+    border-color: transparent;
+    color:#C23564 ;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 400;
+}
 
 .card:hover {
     background-color: #fff;
@@ -425,14 +435,12 @@ ul {
 }
 
 .lastContainer {
-    height: 156px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 40px;
+    margin-bottom:60px ;
 }
 
 .cardWidthInfo {
-    /* margin-right: 20px; */
     width: 1114px;
     display: flex;
     justify-content: space-between;
@@ -454,7 +462,6 @@ ul {
     font-weight: 700;
     font-family: Quicksand;
     margin: 5px 0;
-
 }
 
 .secondText {
@@ -462,12 +469,9 @@ ul {
     font-size: 14px;
 }
 
-
-
-
 footer {
     background-color: #F7F7FA;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -486,25 +490,32 @@ footer {
 .opacityP {
     font-size: 16px;
     color: #B1B1C3;
+    
+}
+.opacityP2 {
+    font-size: 16px;
+    color: #B1B1C3;
+    margin-bottom: 20px;
 }
 
 .qwerty {
     width: 1129px;
     display: flex;
     padding: 30px 10% 0 10%;
-
+    margin-bottom: 10px;
 }
 
 .littleTextF {
+    /* padding: 15px 0; */
     font-size: 16px;
     color: #1F1F1F;
-    margin-top: 25px;
-
+    /* margin: 25px 0; */
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .lastContF {
     display: flex;
-    margin-top: 27px;
 }
 
 .miniCont1 {
@@ -514,7 +525,6 @@ footer {
 .boldText {
     font-size: 16px;
     font-weight: 700;
-    font-family: Inter;
 }
 
 .greyText {
@@ -525,6 +535,7 @@ footer {
 
 .containerTextF {
     display: flex;
+    margin-bottom: 27px;
 }
 
 .littleTextF2 {
@@ -532,11 +543,11 @@ footer {
     margin-top: 25px;
     font-size: 16px;
     color: #1F1F1F;
+    cursor: pointer;
 }
 
 .lastContF2 {
     display: flex;
-    margin-top: 27px;
 }
 
 .miniCont1F {
@@ -552,6 +563,10 @@ footer {
     color: #2264D1;
     font-weight: 700;
     margin: 0 20px 0 40px;
+    cursor: pointer;
+}
+#footerButton:hover{
+    opacity: 0.6;
 }
 
 .lastContF2 img {
@@ -559,7 +574,7 @@ footer {
 }
 
 .greyLineF {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 100%;
     background-color: #E6E6EA;
     display: flex;
@@ -598,6 +613,11 @@ footer {
     border: 1px solid #9DC2FF;
     background-color: transparent;
     color: #2264D1;
+    cursor:pointer
+}
+
+.secondBlockF button:hover{
+    opacity: 0.6;
 }
 
 .secondBlockF2 {
@@ -625,6 +645,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding-right: 30px;
+    color:#B1B1C3;
 }
 
 .images {
@@ -645,16 +666,17 @@ footer {
     justify-content: space-between;
 }
 
-.blockInBottomF p {
+
+.sub-footer-info{
     color: #B1B1C3;
     font-size: 12px;
 }
-
-
 .card {
-    margin: 10px 0px;
+    margin-bottom: 10px;
+    /* margin: 10px 0px; */
     padding: 10px;
-    width: 258px;
+    width: 23%;
+    /* width: 258px; */
     height: 472px;
     border-radius: 8px;
     box-sizing: border-box;
@@ -666,7 +688,10 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+.image-in-card{
+    max-width: 227px ;
+    max-height:224px ;
+}
 .textCard1 {
     height: 90px;
     font-size: 16px;
@@ -681,7 +706,6 @@ footer {
 .textCard2 {
     color: #787885;
     font-size: 14px;
-    margin-top: 10px;
     display: flex;
     align-items: center;
     height: 50px;
@@ -722,8 +746,9 @@ footer {
 
 .filter {
     display: flex;
-    width: 304px;
-    height: 56px;
+    padding: 15px 0;
+    /* width: 304px; */
+    /* height: 56px; */
     border: 1px solid #9DC2FF;
     box-sizing: border-box;
     align-items: center;
@@ -743,10 +768,10 @@ footer {
     font-family: Quicksand;
 }
 
-.filter img {
+.filter span {
     width: 18px;
     height: 18px;
-    margin: 0 35px;
+    padding: 0 35px;
 
 }
 
@@ -772,11 +797,9 @@ footer {
 
 .nameSelect {
     font-size: 16px;
-    font-family: Inter;
     color: #19191D;
     font-weight: 400;
     display: flex;
-
 }
 
 .underName {
@@ -823,6 +846,7 @@ footer {
     border-radius: 4px;
     color: #19191D;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 
 .closeBlock p:hover {
@@ -853,11 +877,14 @@ footer {
     padding: 10px 0 10px 40px;
     cursor: pointer;
 }
+.checkbox-square{
+    margin-right: 10px;
+}
 
 .labelCheckbox {
     color: #19191D;
     font-size: 16px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-weight: 400;
     cursor: pointer;
 }
@@ -892,15 +919,18 @@ footer {
 }
 
 .expendButton {
-    width: 75px;
-    height: 40px;
+    /* width: 75px; */
+    /* height: 40px; */
     background-color: #EBF2FF;
     border-color: transparent;
     color: #2264D1;
     font-weight: 700;
     font-size: 14px;
     border-radius: 4px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
 }
 
 .liButton {
@@ -913,6 +943,8 @@ footer {
 .blockPrice {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 10px; */
 }
 
 .blockNearPrice {
@@ -973,9 +1005,7 @@ footer {
 .containerElementFilter {
     box-sizing: border-box;
     width: 100%;
-    padding: 10px;
-    /* padding-top: 5px; */
-    /* padding-left: -5px; */
+    padding: 10px 14px;
     flex-direction: column;
     display: flex;
     align-items: flex-start;
@@ -990,8 +1020,6 @@ footer {
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
-    /* padding:5px 10px 0 10px; */
-    /* padding-top: 5px; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -999,6 +1027,9 @@ footer {
 
 .filterContainer {
     width: 100%;
+}
+.filterContainer:last-child {
+    padding-left: 15px;
 }
 
 .innerList a span {
@@ -1015,11 +1046,14 @@ footer {
     border-color: transparent;
     display: flex;
     justify-content: space-around;
-    color: #2264D1;
     font-weight: 700;
     align-items: center;
     font-family: Roboto;
     margin-left: 10px;
+}
+.show-more-text{
+    color: #2264D1;
+    font-weight: 700;
 }
 
 .mainContainer a:hover {
@@ -1032,6 +1066,6 @@ footer {
     align-items: flex-start;
 }
 
-.littleTextF2 p:hover {
+.littleTextF2:hover {
     opacity: 0.6;
 }
