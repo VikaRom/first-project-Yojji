@@ -7,11 +7,12 @@ html * {
 a {
     text-decoration: none;
     font-size: 14px;
-   
+    color: #787885;
 
 }
-span{
-    color:#787885;
+
+span {
+    color: #787885;
 }
 
 li {
@@ -46,12 +47,13 @@ label:hover {
 .header-text1 {
     font-size: 20px;
     color: #5A5B6A;
-    padding:0 25px;
+    padding: 0 25px;
 }
 
 .header-text1:hover {
     opacity: 0.6;
 }
+
 .header-text2:hover {
     opacity: 0.6;
 }
@@ -68,7 +70,7 @@ label:hover {
 }
 
 .header-avatar {
-    padding: 0 25px ;
+    padding: 0 25px;
     cursor: pointer;
 }
 
@@ -129,7 +131,8 @@ input::placeholder {
     font-size: 20px;
     margin-right: 12px;
 }
-.button-header{
+
+.button-header {
     width: 105px;
     height: 40px;
     border: 1px solid #9DC2FF;
@@ -146,10 +149,12 @@ input::placeholder {
     display: flex;
     margin: 0 15px 0 0;
 }
-.container-for-butHeader button{
+
+.container-for-butHeader button {
     font-weight: 700;
 }
-.container-for-butHeader button:hover{
+
+.container-for-butHeader button:hover {
     opacity: 0.6;
 }
 
@@ -212,8 +217,6 @@ input::placeholder {
 }
 
 .info-container-element:hover {
-    /* border: 1px solid #EBF2FF; */
-    /* background-color: #EBF2FF; */
     color: #2979FF;
 }
 
@@ -234,8 +237,6 @@ input::placeholder {
     height: 20px;
     margin-bottom: 5px;
 }
-
-
 
 .main-container {
     width: 100%;
@@ -295,10 +296,12 @@ input::placeholder {
     background-size: .65em auto, 100%;
     padding-left: 15px;
 }
-.drop-menu2:hover{
+
+.drop-menu2:hover {
     opacity: 0.6;
 }
-.drop-menu3:hover{
+
+.drop-menu3:hover {
     opacity: 0.6;
 }
 
@@ -344,7 +347,8 @@ input::placeholder {
     color: #5A5B6A;
     cursor: pointer;
 }
-.choice-button:hover{
+
+.choice-button:hover {
     opacity: 0.6;
 }
 
@@ -405,11 +409,10 @@ input::placeholder {
 .button-list {
     display: flex;
     margin-bottom: 50px;
-
 }
 
 .button-fromList {
-    padding:10px  15px ;
+    padding: 10px 15px;
     border-radius: 99px;
     border-color: transparent;
     background-color: #EDEDF0;
@@ -432,13 +435,13 @@ input::placeholder {
     flex-wrap: wrap;
 }
 
-.red-block{
+.red-block {
     width: 70px;
     height: 24px;
     background-color: #FDEDF2;
     border-radius: 4px;
     border-color: transparent;
-    color:#C23564 ;
+    color: #C23564;
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -455,7 +458,7 @@ input::placeholder {
 .last-container {
     display: flex;
     justify-content: flex-end;
-    margin-bottom:60px ;
+    margin-bottom: 60px;
 }
 
 .card-width-info {
@@ -481,10 +484,12 @@ input::placeholder {
     font-family: Quicksand;
     padding: 5px 0;
 }
-.all-list{
+
+.all-list {
     display: flex;
     flex-direction: column;
 }
+
 .second-text {
     color: #5A5B6A;
     font-size: 14px;
@@ -512,8 +517,9 @@ footer {
     font-size: 16px;
     color: #B1B1C3;
     margin-bottom: 25px;
-    
+
 }
+
 .opacityP2 {
     font-size: 16px;
     color: #B1B1C3;
@@ -586,7 +592,8 @@ footer {
     margin: 0 20px 0 40px;
     cursor: pointer;
 }
-#footerButton:hover{
+
+#footerButton:hover {
     opacity: 0.6;
 }
 
@@ -633,10 +640,10 @@ footer {
     border: 1px solid #9DC2FF;
     background-color: transparent;
     color: #2264D1;
-    cursor:pointer
+    cursor: pointer
 }
 
-.second-blockF button:hover{
+.second-blockF button:hover {
     opacity: 0.6;
 }
 
@@ -665,7 +672,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding-right: 30px;
-    color:#B1B1C3;
+    color: #B1B1C3;
 }
 
 .images {
@@ -688,10 +695,11 @@ footer {
 }
 
 
-.sub-footer-info{
+.sub-footer-info {
     color: #B1B1C3;
     font-size: 12px;
 }
+
 .card {
     margin-bottom: 10px;
     /* margin: 10px 0px; */
@@ -709,10 +717,12 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.image-in-card{
-    max-width: 227px ;
-    max-height:224px ;
+
+.image-in-card {
+    max-width: 227px;
+    max-height: 224px;
 }
+
 .text-card1 {
     height: 90px;
     font-size: 16px;
@@ -897,7 +907,8 @@ footer {
     padding: 10px 0 10px 40px;
     cursor: pointer;
 }
-.checkbox-square{
+
+.checkbox-square {
     margin-right: 10px;
 }
 
@@ -1002,7 +1013,7 @@ footer {
     font-size: 14px;
     background-color: transparent;
     border-color: transparent;
-    outline:none;
+    outline: none;
 }
 
 .inputForEmail::placeholder {
@@ -1047,6 +1058,7 @@ footer {
 .filter-container {
     width: 100%;
 }
+
 .filter-container:last-child {
     padding-left: 15px;
 }
@@ -1070,7 +1082,8 @@ footer {
     font-family: Roboto;
     margin-left: 10px;
 }
-.show-more-text{
+
+.show-more-text {
     color: #2264D1;
     font-weight: 700;
 }
