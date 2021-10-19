@@ -339,15 +339,13 @@ input::placeholder {
 }
 
 .choice-button {
-    /* width: 85px; */
-    /* height: 36px; */
     border-radius: 4px;
     border-color: transparent;
     background-color: #EBF2FF;
     color: #5A5B6A;
     cursor: pointer;
     text-align: center;
-    padding:10px ;
+    padding: 10px;
 }
 
 .choice-button:hover {
@@ -367,9 +365,9 @@ input::placeholder {
     background-color: #EBF2FF;
     color: #5A5B6A;
     cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .choice-button-active {
@@ -381,7 +379,7 @@ input::placeholder {
     color: #5A5B6A;
     cursor: pointer;
     text-align: center;
-    padding:10px ;
+    padding: 10px;
 }
 
 
@@ -505,7 +503,6 @@ input::placeholder {
 
 footer {
     background-color: #F7F7FA;
-    /* margin-top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -574,8 +571,6 @@ footer {
 
 .little-textF2 {
     margin-right: 43px;
-    /* margin-top: 25px; */
-    /* margin-bottom: 25px; */
     font-size: 16px;
     color: #1F1F1F;
     cursor: pointer;
@@ -588,13 +583,12 @@ footer {
 .mini-cont1F {
     margin-right: 25px;
 }
-.img-in-footer:hover{
+
+.img-in-footer:hover {
     opacity: 0.6;
 }
 
 .footerButton {
-    /* width: 166px; */
-    /* height: 40px; */
     padding: 10px 15px;
     background-color: #EBF2FF;
     border-radius: 4px;
@@ -714,10 +708,8 @@ footer {
 
 .card {
     margin-bottom: 10px;
-    /* margin: 10px 0px; */
     padding: 10px;
     width: 23%;
-    /* width: 258px; */
     height: 472px;
     border-radius: 8px;
     box-sizing: border-box;
@@ -761,13 +753,8 @@ footer {
 .star-block p {
     margin-left: 10px;
 }
-/* .img-like{
-  
-} */
 
 .watch {
-    /* width: 88px; */
-    /* height: 32px; */
     background: url('img/heard.svg')left 10px center no-repeat;
     padding: 10px 10px 10px 40px;
     border-radius: 4px;
@@ -775,11 +762,6 @@ footer {
     background-color: transparent;
     color: #2264D1;
     font-weight: 500;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around; */
-    /* cursor: pointer;
-    padding: 10px */
 
 
 }
@@ -934,7 +916,6 @@ footer {
 .labelCheckbox {
     color: #19191D;
     font-size: 16px;
-    /* margin-left: 10px; */
     font-weight: 400;
     cursor: pointer;
 }
@@ -992,7 +973,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 10px; */
 }
 
 .blockNearPrice {
