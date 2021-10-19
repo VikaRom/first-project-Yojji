@@ -40,7 +40,7 @@ label:hover {
     height: 70px;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
 }
 
@@ -101,6 +101,7 @@ input::placeholder {
     width: 17.5px;
     margin-top: 17px;
     margin-left: -655px;
+    cursor: pointer;
 }
 
 .headerLogo2 {
@@ -108,10 +109,11 @@ input::placeholder {
     width: 17.5px;
     margin-top: 17px;
     margin-left: -35px;
+    cursor: pointer;
 }
 
 .header-text3 {
-    padding: 0 25px;
+    padding: 0 48px 0 0;
     font-size: 20px;
     color: #2264D1;
     margin-right: 75px;
@@ -133,6 +135,9 @@ input::placeholder {
 }
 
 .button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 105px;
     height: 40px;
     border: 1px solid #9DC2FF;
@@ -144,6 +149,9 @@ input::placeholder {
     margin-right: 12px;
     cursor: pointer;
 }
+.button-header:hover{
+    opacity: 0.6
+}
 
 .container-for-butHeader {
     display: flex;
@@ -152,10 +160,6 @@ input::placeholder {
 
 .container-for-butHeader button {
     font-weight: 700;
-}
-
-.container-for-butHeader button:hover {
-    opacity: 0.6;
 }
 
 .notofocation {
@@ -175,6 +179,7 @@ input::placeholder {
     top: -5px;
     color: #fff;
     font-size: 14px;
+    z-index: 1000;
 }
 
 .header-button-active {
@@ -193,7 +198,7 @@ input::placeholder {
     height: 64px;
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 }
 
 .info-container-element {
@@ -201,9 +206,8 @@ input::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 150px;
-    border-radius: 5px;
-    padding: 6px;
+    border-radius: 8px;
+    padding: 6px 15px;
 
 }
 
@@ -249,16 +253,18 @@ input::placeholder {
 .aside {
     display: flex;
     flex-direction: column;
-    margin-right: 75px;
+    margin-right: 50px;
 }
 
 .main-part {
-    padding: 16px;
+    max-height: 1612px;
+    padding: 16px 16px 0 16px;
     box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
     border-radius: 4px;
 }
 
 .drop-menu1 {
+    outline: none;
     width: 136px;
     height: 36px;
     border-radius: 4px;
@@ -288,6 +294,7 @@ input::placeholder {
     padding: 5px;
     color: #787885;
     cursor: pointer;
+    outline: none;
 
     appearance: none;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200L5%205L10%200L0%200Z%22%20fill%3D%22%23787885%22%2F%3E%3C%2Fsvg%3E ');
@@ -313,6 +320,7 @@ input::placeholder {
     font-size: 14px;
     color: #787885;
     cursor: pointer;
+    outline: none;
 
     appearance: none;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200L5%205L10%200L0%200Z%22%20fill%3D%22%23787885%22%2F%3E%3C%2Fsvg%3E ');
@@ -345,7 +353,7 @@ input::placeholder {
     color: #5A5B6A;
     cursor: pointer;
     text-align: center;
-    padding: 10px;
+    padding:10px ;
 }
 
 .choice-button:hover {
@@ -365,9 +373,9 @@ input::placeholder {
     background-color: #EBF2FF;
     color: #5A5B6A;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .choice-button-active {
@@ -376,10 +384,9 @@ input::placeholder {
     box-shadow: 0px 1px 2px rgba(27, 78, 163, 0.24), 0px 2px 4px rgba(41, 121, 255, 0.24);
     border-radius: 4px;
     border-color: transparent;
-    color: #5A5B6A;
     cursor: pointer;
     text-align: center;
-    padding: 10px;
+    padding:10px ;
 }
 
 
@@ -414,7 +421,7 @@ input::placeholder {
 
 .button-list {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .button-fromList {
@@ -437,7 +444,7 @@ input::placeholder {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -583,12 +590,14 @@ footer {
 .mini-cont1F {
     margin-right: 25px;
 }
-
-.img-in-footer:hover {
+.img-in-footer:hover{
     opacity: 0.6;
 }
 
 .footerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 15px;
     background-color: #EBF2FF;
     border-radius: 4px;
@@ -707,7 +716,7 @@ footer {
 }
 
 .card {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 10px;
     width: 23%;
     height: 472px;
@@ -744,6 +753,7 @@ footer {
     display: flex;
     align-items: center;
     height: 50px;
+    margin-bottom: 5px;
 }
 
 .star-block {
@@ -766,9 +776,7 @@ footer {
 
 }
 
-.watch:hover {
-    background-color: rgba(189, 211, 245, 0.199)
-}
+
 
 .bottom-part-card {
     display: flex;
@@ -777,6 +785,7 @@ footer {
 }
 
 .filter {
+    width: 90%;
     display: flex;
     padding: 15px 0;
     border: 1px solid #9DC2FF;
@@ -871,15 +880,16 @@ footer {
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
     border-radius: 4px;
     color: #19191D;
     margin-bottom: 24px;
     cursor: pointer;
+    padding: 0 15px;
 }
 
-.close-block p:hover {
+.close-block:hover {
     opacity: 0.6;
 }
 
@@ -891,32 +901,33 @@ footer {
 }
 
 .block-name {
-    padding: 15px 0;
+    padding: 15px ;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #19191D;
     font-weight: 500;
     cursor: pointer;
 }
 
-.block-name p:hover {
+.block-name:hover {
     opacity: 0.6;
 }
 
 .checkbox {
-    padding: 10px 0 10px 40px;
-    cursor: pointer;
+    padding: 10px 0 10px 20px;
 }
 
 .checkbox-square {
-    margin-right: 10px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 .labelCheckbox {
     color: #19191D;
     font-size: 16px;
     font-weight: 400;
+    cursor: pointer;
     cursor: pointer;
 }
 
@@ -960,6 +971,10 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
+}
+
+.expend-button:hover{
+    opacity: 0.6;
 }
 
 .liButton {
@@ -1053,6 +1068,9 @@ footer {
     align-items: center;
     justify-content: flex-start;
 }
+.container-element-filter1:hover{
+    opacity: 0.6;
+}
 
 .filter-container {
     width: 100%;
@@ -1061,7 +1079,13 @@ footer {
 .filter-container:last-child {
     padding-left: 15px;
 }
-
+/* .inner-list{
+    padding: 7px 0;
+} */
+.blue-block{
+    padding-left: 10px;
+    margin-bottom: -10px;
+}
 .inner-list a span {
     font-weight: 400;
     color: #19191D;
@@ -1087,8 +1111,15 @@ footer {
     font-weight: 700;
 }
 
-.main-container a:hover {
+.show-more:hover{
+    opacity: 0.6;
+}
+
+/* .main-container a:hover {
     opacity: 0.6
+} */
+.name:hover{
+    opacity: 0.6;
 }
 
 .subcategory {
