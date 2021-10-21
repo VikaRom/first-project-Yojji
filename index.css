@@ -369,7 +369,7 @@ input::placeholder {
 .choice-button {
     border-radius: 4px;
     border-color: transparent;
-    background-color: #EBF2FF;
+    /* background-color: #EBF2FF; */
     color: #5A5B6A;
     cursor: pointer;
     text-align: center;
