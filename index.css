@@ -141,12 +141,13 @@ input::placeholder {
 }
 
 .button-header {
+    font-family: Quicksand;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 105px;
     height: 40px;
-    border: 1px solid #9DC2FF;
+    border: 1px solid #9DC2FF; 
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #fff;
@@ -154,6 +155,7 @@ input::placeholder {
     font-size: 20px;
     margin-right: 12px;
     cursor: pointer;
+    font-weight: 700;
 }
 .button-header:hover{
     opacity: 0.6
@@ -161,7 +163,7 @@ input::placeholder {
 
 .container-for-butHeader {
     display: flex;
-    margin: 0 15px 0 0;
+    /* margin: 0 15px 0 0; */
 }
 
 .container-for-butHeader button {
@@ -173,6 +175,7 @@ input::placeholder {
 }
 
 .red-circle {
+    font-family: Quicksand;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -187,14 +190,18 @@ input::placeholder {
     font-size: 14px;
     z-index: 1000;
 }
+.avatar-icon{
+    max-width: 40px ;
+    max-height: 40px ;
+}
 
 .header-button-active {
+    font-family: Quicksand;
     border-radius: 4px;
     background-color: #fff;
     border-color: transparent;
     color: #2264D1;
     font-size: 20px;
-    font-weight: 500;
     margin-right: 12px;
     box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
 }
@@ -276,17 +283,18 @@ input::placeholder {
     border-radius: 4px;
     margin-right: 5px;
     font-size: 14px;
+    font-weight: 500;
+    color:#19191D;
     padding: 5px;
     border: 1px solid #5A5B6A;
     display: block;
     margin: 0;
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
     appearance: none;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200L5%205L10%200L0%200Z%22%20fill%3D%22%23787885%22%2F%3E%3C%2Fsvg%3E ');
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
-    padding-left: 15px;
+    padding-left: 10px;
     cursor: pointer;
 }
 
@@ -307,7 +315,7 @@ input::placeholder {
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .drop-menu2:hover {
@@ -333,7 +341,7 @@ input::placeholder {
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .headetInMain {
@@ -341,7 +349,13 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
 }
-
+.background-color{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #EBF2FF;
+    margin-right: 35px;
+}
 .left-part-drop-menu {
     display: flex;
     justify-content: space-around;
@@ -359,7 +373,7 @@ input::placeholder {
     color: #5A5B6A;
     cursor: pointer;
     text-align: center;
-    padding:10px ;
+    padding: 6px 10px ;
 }
 
 .choice-button:hover {
@@ -367,13 +381,17 @@ input::placeholder {
 }
 
 .sec {
-    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #EBF2FF;
+    /* margin-left: 35px; */
     display: flex;
 }
 
 .choice-button2 {
     width: 68px;
-    height: 36px;
+    height: 37px;
     border-radius: 4px;
     border-color: transparent;
     background-color: #EBF2FF;
@@ -386,7 +404,8 @@ input::placeholder {
 
 .choice-button-active {
     background-color: #fff;
-    color: #2979FF;
+    color: #2264D1;
+    font-weight: 500;
     box-shadow: 0px 1px 2px rgba(27, 78, 163, 0.24), 0px 2px 4px rgba(41, 121, 255, 0.24);
     border-radius: 4px;
     border-color: transparent;
@@ -406,7 +425,7 @@ input::placeholder {
     background-color: #fff;
     box-shadow: 0px 1px 2px rgba(27, 78, 163, 0.24), 0px 2px 4px rgba(41, 121, 255, 0.24);
     width: 68px;
-    height: 36px;
+    height: 37px;
     border-radius: 4px;
     border-color: transparent;
     color: #5A5B6A;
@@ -1020,8 +1039,10 @@ footer {
 
 .sort-by::after {
     content: 'SORT BY';
+    letter-spacing: 1.5px;
+    font-weight: 500;
     top: -5px;
-    left: 5px;
+    left: 8px;
     height: 16px;
     padding: 0 3px;
     color: #787885;
